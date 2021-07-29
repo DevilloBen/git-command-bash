@@ -1,0 +1,68 @@
+git cherry-pick
+git rebase -i
+
+git describe main
+git describe side
+
+git rebase -i HEAD~1
+
+
+git branch -f main HEAD~3 เลื่อนตำแหน่ง 
+
+- revert HEAD
+- reset HEAD~1
+
+git cherry-pick c3 c... เลือก *main
+git cherry-pick
+
+git checkout main^ ซ้าย ^2 ขวา  ~ ระยะทาง
+
+git clone สร้างร่างแยก พร้อมขึ้น Product
+
+git fetch  ดึง node ที่ไม่อยู่ใน main ปัจจุบัน
+
+git merge รวมเส้นทาง
+
+git pull  = fetch + merge
+
+git fakeTeamwork ตัวแปร <number>  สร้างงานปลอม แต่พร้อมเข้า product
+
+git push อ้างอิงจาก product จริง และไปใส่ใน clone
+
+git rebase ตัวแปร   ตำแหน่งที่จะไปอยู่ด้วย แก้ปัญหา เรื่อง node ของ clone และ product ไม่ตรงกัน
+
+git pull --rebase
+
+git branch -u o/main foo 
+
+git push origin main
+git push origin <source>:<destination>
+
+git fetch origin foo
+
+
+git push origin :side
+git fetch origin :bugFix
+
+git pull origin foo
+git pull origin bar~1:bugFix
+
+เวลาทำงานจริง
+git config --global user.email "sakhonkam.b@gmail.com"
+git config --global user.name "DevilloBen"
+git config --list
+เวลามีปัญหา ถ้า Save งาน ต้อง add ใหม่ทั้งหมด
+git add .
+git commit -m "คอมเม้นไว้ว่าทำอะไร Eng"
+
+git remote add origin <url>
+
+git push
+git push -u origin master
+ถ้า ซ้อนกัน config ให้มาคุยกัน ว่าเอา โค้ดไหน เลือกได้ทุกทาง ละ Save add push
+
+git clone -b <branchname> <remote-repo-url>
+
+
+**not file git
+git init
